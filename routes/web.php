@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/hello/{name}/{name1}',function($name,$name1){
+    echo "hello"."<br/>".$name."<br/>".$name1;
+});
+
+// Route::get('/calc','helloController@index');
+// Route::post('/calc','helloController@add');
+Route::get('/multiple','newController@index');
+Route::post('/multiple','newController@multi');
